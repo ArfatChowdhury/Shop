@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <p class="">Lets assume you are in a convince store </p>
+    <h1>Welcome to Japanese Uolooo</h1>
+    <h2>Menu</h2>
+
+    <section class=" grid grid-cols-3 gap-3">
+        <!-- products  -->
+        <div class="grid grid-cols-3 col-span-2 gap-4">
+            <!-- product Card 1 -->
+            <div class="card w-96 bg-base-100 shadow-xl bg-green-200">
+                <figure><img src="./chips.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Chips</h2>
+                    <p>Price: 100 $ </p>
+                    <input id="quantity" type="number">
+                    <div class="card-actions  ">
+                        <button onclick="handlerBtn(this)" class="btn btn-success  bg-red-600 text-white  w-9/12">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- product card 2  -->
+            <div class="card w-96 bg-base-100 shadow-xl bg-green-200">
+                <figure><img src="./doracake.jpeg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Dora Cake</h2>
+                    <p>Price: 20 $ </p>
+                    <input id="quantity" type="number">
+                    <div class="card-actions  ">
+                        <button onclick="handlerBtn(this)" class="btn btn-success  bg-red-600 text-white   w-9/12">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- product card 3  -->
+            <div class="card w-96 bg-base-100 shadow-xl bg-green-200">
+                <figure><img src="./drinks.jpeg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Drinks</h2>
+                    <p>Price: 2 $ </p>
+                    <input id="quantity" type="number">
+                    <div class="card-actions  ">
+                        <button onclick="handlerBtn(this)" class="btn btn-success  bg-red-600 text-white  w-9/12">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- product card 4  -->
+            <div class="card w-96 bg-base-100 shadow-xl bg-green-200">
+                <figure><img src="./milk.webp" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Milk</h2>
+                    <p>Price: 50 $ </p>
+                    <input id="quantity" type="number">
+                    <div class="card-actions  ">
+                        <button onclick="handlerBtn(this)" class="btn btn-success  bg-red-600 text-white  w-9/12">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- product card 5  -->
+            <div class="card w-96 bg-base-100 shadow-xl bg-green-200">
+                <figure><img src="./shusi.webp" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Shusi</h2>
+                    <p>Price: 80 $ </p>
+                    <input id="quantity" type="number">
+                    <div class="card-actions  ">
+                        <button onclick="handlerBtn(this)" class="btn btn-success  bg-red-600 text-white  w-9/12">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- product card 6  -->
+            <div class="card w-96 bg-base-100 shadow-xl bg-green-200">
+                <figure><img src="./water.jpeg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Chips</h2>
+                    <p>Price: 10 $ </p>
+                    <input id="quantity" type="number">
+                    <div class="card-actions  ">
+                        <button onclick="handlerBtn(this)" class="btn btn-primary bg-red-600 text-white w-9/12">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-400  my-3 font-medium ">
+            <h1 id="cart" class="text-2xl font-semibold mb-4 mx-5">Cart</h1>
+
+            <h1 class="text-2xl mb-4 mx-5">total <span id="total">0</span></h1>
+            <h1 class="text-xl mb-4 mx-5">Discount 30% </h1>
+            <button onclick="Discount(this)" class="mb-4 btn w-9/12 bg-green-500">Apply</button>
+            <h1 class="text-3xl mb-4 mx-5">Grand Total <span id="grand-total">0</span></h1>
+
+        </div>
+    </section>
+<script src="./index.js"></script>
+</body>
+
+</html>
